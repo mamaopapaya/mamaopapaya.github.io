@@ -1,6 +1,15 @@
 //let textoInicial = document.querySelector('#texto1').value;
 
+function soma2(event){
+	if(event.keyCode===13){
+		soma1();
+	}
+}
+
 function soma1(){
+
+	
+
 	let textoInicial = document.querySelector('#texto1').value;
 	document.querySelector('#texto1').value='';
 	var num= (textoInicial).match(/\d{1,20}/);
@@ -10,6 +19,7 @@ function soma1(){
 	var numAlterado = (Number(num)+1).toString();
 	let texto2;
 	let aux=numAlterado.length;
+
 
 	if(textoInicial===''){
 		return;
@@ -41,5 +51,7 @@ function soma1(){
 	texto2=textoInicial.substring(0,lastIndx-aux)+numAlterado;
 	add=`<h1>${textoInicial} --> ${texto2}</h1>`;
 	return document.querySelector('button').insertAdjacentHTML('afterend',add);
+
+	
 
 }
