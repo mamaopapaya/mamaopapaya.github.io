@@ -8,12 +8,13 @@
 </head>
 <body>
 	<div class="container">
-		<h3>Acrescenta 1 ao fim da palavra, ou soma mais 1 se tiver número no fim da palavra   </h3>
+		<h3>Acrescenta 1 ao fim da palavra, ou soma mais 1 se tiver número no fim da palavra  
+		<br>obs.: números no começo ou no meio da palavra fazem soma a soma incorreta </h3>
 		<h4>
 			ex.1: teste --> teste1<br>
 			ex.2: teste1 --> teste2
 		</h4>
-		<input type="text" id="texto1">
+		<input type="text" id="texto1" onkeyup="soma2(event)">
 		<button class='button' placeholder='escreva...' onclick="soma1()">+1</button>
 
 		<script type="text/javascript" src="./script.js"></script>
